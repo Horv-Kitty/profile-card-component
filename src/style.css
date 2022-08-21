@@ -15,6 +15,7 @@ body {
 div.background-image {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
     margin: -10px;
     padding-bottom: 180px;
     background: url(images/bg-pattern-top.svg) right 52vw bottom 36vh no-repeat, url(images/bg-pattern-bottom.svg) left 48vw top 52vh no-repeat;
@@ -33,7 +34,7 @@ div.container {
     flex-direction: column;
     align-items: center;
     border-radius: 15px;
-    width: 350px;
+    max-width: 350px;
     box-shadow: 5px 30px 100px var(--box-shadow-color);
 }
 
@@ -76,7 +77,7 @@ h1 {
 .page-hr {
     border: 0.1px solid var(--hr-color);
     position: relative;
-    width: 349px;
+    width: 100%;
 }
 
 .datas-container {
@@ -124,13 +125,22 @@ footer a:active {
     color: blue;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 360px) {
     div.container {
-        width: 330px;
+        max-width: 100%
     }
+}
 
-    .page-hr {
-        width: 329px;
+
+@media (min-width: 360px) {
+    div.container {
+        max-width: 330px;
+    }
+}
+
+@media (min-width: 600px) {
+    div.container {
+        max-width: 350px;
     }
 }
 
