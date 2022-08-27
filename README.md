@@ -11,6 +11,7 @@ You can use any tools you like to help you complete the challenge. So if you've 
 
 ![](src/images/screenshot.jpg)
 
+- Solution URL: (https://www.frontendmentor.io/solutions/profile-card-component-solution-6BHy-9h8eL)
 - Live Site URL: (https://magical-salamander-be85e1.netlify.app/)
 
 ### Built with
